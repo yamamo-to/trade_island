@@ -1,0 +1,257 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>GMOクリック証券 - ランキング | トレードアイランド</title>
+<meta name="description" content="トレードアイランドはGMOクリック証券でお取引されるお客様のための公式コミュニティ。株、FX、日経225先物オプション、eワラント取引の収益額を競うランキングやご自身のHPのご紹介など">
+<meta name="keywords" content="GMOクリック証券,FX,コミュニティ,トレードアイランド,外国為替,株,信用取引,夜間取引,日経225先物,日経225mini,日経225オプション,eワラント">
+<link rel="shortcut icon" href="/common/images/favicon.ico">
+<?php require_once "include/minify.php"; minify_start(); ?>
+<link href="/trade/common/css/style.css" rel="stylesheet" type="text/css">
+<link href="/trade/common/css/style_rank.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/trade/common/js/css_browser_selector.js"></script>
+<script type="text/javascript" src="/common/js/jquery-1.5.2.js"></script>
+<script type="text/javascript" src="/trade/common/js/javascript.js"></script>
+<script type="text/javascript" src="/common/js/iepngfix_tilebg.js"></script>
+<?php minify_end_flush(); ?>
+</head>
+<body>
+<a name="pagetop"></a>
+<div id="CONTENTS_AREA">
+  <div id="WRAP">
+    <!-- head area  start -->
+    <div id="HEAD_AREA">
+      <ul class="clearfix">
+        <li id="LOGO_TRADE" class="left"><a href="/trade/" title="トレードアイランド">トレードアイランド</a></li>
+        <li id="TOP_LOGIN" class="right"><a href="https://sec-sso.click-sec.com/loginweb/sso-redirect?s=01&amp;p=03" title="ログイン">ログイン</a></li>
+      </ul>
+      <div id="TOP_NAVI_BG">
+        <ul id="TOP_BTN" class="clearfix">
+          <li class="left"><a href="/trade/" title="トレードアイランド" class="btn01"></a></li>
+          <li class="left mgl8"><a href="/trade/rank.html" title="ランキング" class="btn02_on"></a></li>
+          <li class="left mgl8"><a href="/trade/past_rank.html" title="過去のランキング" class="btn03"></a></li>
+          <li class="right"><a href="/trade/about.html" title="ガイド・ルール" class="btn04"></a></li>
+        </ul>
+      </div>
+      <!-- page title -->
+      <div class="title_area mgt10">
+        <h1 class="ttl_bg"><img src="/trade/common/images/ttl_h1_rank.png" alt="ランキング" title="ランキング"></h1>
+        <div class="txt_box01">
+          <p>2018年5月の参加者数&nbsp;:&nbsp;<span class="rank_result_num">18,157</span>&nbsp;人</p>
+        </div>
+          <div class="txt_box02">
+          <p>（2018年5月4日&nbsp;更新）</p>
+        </div>
+        </div>
+    </div>
+    <!-- /head area -->
+    <!-- main contents area -->
+    <div id="MAIN_CONTENTS_AREA" class="clearfix">
+
+  <!-- rank control -->
+  <div id="rank_control" class="clearfix">
+    <form id="rank_search" method="GET" action="" class="left mgl5">
+      <input type="text" name="z" value="ニックネーム検索" class="nickname_search">
+      <input type="hidden" name="mm" value="0">
+      <input type="submit" class="btn_search" value="検索" title="検索">
+    </form>
+    <form id="month_pre_next_box" method="GET" action="">
+      <a href="/trade/rank.html?n=50&amp;mm=1&amp;c=r" title="前月ランキング" class="btn_month_pre">前月ランキング</a>      <span class="mselect">
+        <input type="hidden" name="n" value="50">
+        <select name="mm" onChange="pllink(this,'mm','n,c,d')"><optgroup label="2018年">
+<option value="0" selected="selected" id="-0-0">2018年5月</option>
+<option value="1" id="-0-1">2018年4月</option>
+<option value="2" id="-0-2">2018年3月</option>
+<option value="3" id="-0-3">2018年2月</option>
+<option value="4" id="-0-4">2018年1月</option>
+</optgroup>
+<optgroup label="2017年">
+<option value="5" id="-1-0">2017年12月</option>
+<option value="6" id="-1-1">2017年11月</option>
+<option value="7" id="-1-2">2017年10月</option>
+<option value="8" id="-1-3">2017年9月</option>
+<option value="9" id="-1-4">2017年8月</option>
+<option value="10" id="-1-5">2017年7月</option>
+<option value="11" id="-1-6">2017年6月</option>
+<option value="12" id="-1-7">2017年5月</option>
+<option value="13" id="-1-8">2017年4月</option>
+<option value="14" id="-1-9">2017年3月</option>
+<option value="15" id="-1-10">2017年2月</option>
+<option value="16" id="-1-11">2017年1月</option>
+</optgroup>
+<optgroup label="2016年">
+<option value="17" id="-2-0">2016年12月</option>
+<option value="18" id="-2-1">2016年11月</option>
+<option value="19" id="-2-2">2016年10月</option>
+<option value="20" id="-2-3">2016年9月</option>
+<option value="21" id="-2-4">2016年8月</option>
+<option value="22" id="-2-5">2016年7月</option>
+<option value="23" id="-2-6">2016年6月</option>
+<option value="24" id="-2-7">2016年5月</option>
+<option value="25" id="-2-8">2016年4月</option>
+<option value="26" id="-2-9">2016年3月</option>
+<option value="27" id="-2-10">2016年2月</option>
+<option value="28" id="-2-11">2016年1月</option>
+</optgroup>
+<optgroup label="2015年">
+<option value="29" id="-3-0">2015年12月</option>
+<option value="30" id="-3-1">2015年11月</option>
+<option value="31" id="-3-2">2015年10月</option>
+<option value="32" id="-3-3">2015年9月</option>
+<option value="33" id="-3-4">2015年8月</option>
+<option value="34" id="-3-5">2015年7月</option>
+<option value="35" id="-3-6">2015年6月</option>
+<option value="36" id="-3-7">2015年5月</option>
+<option value="37" id="-3-8">2015年4月</option>
+<option value="38" id="-3-9">2015年3月</option>
+<option value="39" id="-3-10">2015年2月</option>
+<option value="40" id="-3-11">2015年1月</option>
+</optgroup>
+<optgroup label="2014年">
+<option value="41" id="-4-0">2014年12月</option>
+<option value="42" id="-4-1">2014年11月</option>
+<option value="43" id="-4-2">2014年10月</option>
+<option value="44" id="-4-3">2014年9月</option>
+<option value="45" id="-4-4">2014年8月</option>
+<option value="46" id="-4-5">2014年7月</option>
+<option value="47" id="-4-6">2014年6月</option>
+<option value="48" id="-4-7">2014年5月</option>
+<option value="49" id="-4-8">2014年4月</option>
+<option value="50" id="-4-9">2014年3月</option>
+<option value="51" id="-4-10">2014年2月</option>
+<option value="52" id="-4-11">2014年1月</option>
+</optgroup>
+<optgroup label="2013年">
+<option value="53" id="-5-0">2013年12月</option>
+</optgroup>
+</select>
+        <input type="hidden" name="c" value="">
+        <noscript><input type="submit" value="移動"></noscript>
+      </span>
+      <span class="month_next_off">&nbsp;</span>    </form>
+    <form id="rank_pagenum" method="GET" action="" class="right">
+      <select name="n" onChange="pllink(this,'n','mm,c,d')"><option value="20">20位表示</option>
+<option value="50" selected="selected">50位表示</option>
+<option value="100">100位表示</option>
+</select>
+      <input type="hidden" name="mm" value="0">
+      <input type="hidden" name="c" value="">
+      <noscript><input type="submit" value="変更"></noscript>
+    </form>
+  </div>
+  <!-- /rank control -->
+
+  <div class="rank_navi mgt10">
+    <div class="rank_sample">※ランク（前月比）
+      <span class="img icon_arrow icon_up">…アップ</span>
+      <span class="img icon_arrow icon_down">…ダウン</span>
+      <span class="img icon_arrow icon_eq">…同じ</span>
+    </div>
+    <div class="rank_paging"><ul class="page_navi clearfix"><li><span><span>1</span></span></li><li><a href="/trade/rank.html?pageID=2" title="page 2">2</a></li><li><a href="/trade/rank.html?pageID=3" title="page 3">3</a></li><li><a href="/trade/rank.html?pageID=4" title="page 4">4</a></li><li><a href="/trade/rank.html?pageID=5" title="page 5">5</a></li><li><a href="/trade/rank.html?pageID=2" title="next page"> &gt;&gt; </a></li><li><a href="/trade/rank.html?pageID=364" title="last page">364</a></li></ul></div>
+  </div>
+
+  <!-- rank table -->
+  <table class="rank_table01">
+    <thead>
+      <tr>
+        <th colspan="3" class="th01 rank_ranking">月間ランキング</th>
+        <th colspan="8" class="th01 rank_condition">投資状況</th>
+      </tr>
+      <tr>
+        <th colspan="2" class="rank_no th02">
+          <p>順位</p>
+        </th>
+        <th class="th02 nickname">
+          <p>ニックネーム</p>
+          <p><a href="/trade/rank.html?n=50&amp;c=hpb" class="">HP/Blog</a></p>
+        </th>
+        <th class="th02">
+        <p><a href="/trade/rank.html?n=50&amp;c=r&amp;d=1" class="sort_select sort_down">収益率</a></p>
+        <p><a href="/trade/rank.html?n=50&amp;c=b" class="">収益額</a></p></th>
+        <th class="th02">
+          <p><a href="/trade/rank.html?n=50&amp;c=gs" class="">現在資産</a></p>
+          <p><a href="/trade/rank.html?n=50&amp;c=ts" class="">当初資産</a></p>
+        </th>
+        <th class="th02">
+          <p><a href="/trade/rank.html?n=50&amp;c=kn" class="">株式回数</a></p>
+          <p><a href="/trade/rank.html?n=50&amp;c=kd" class="">約定代金</a></p>
+        </th>
+        <th class="th02">
+          <p><a href="/trade/rank.html?n=50&amp;c=sn" class="">先OP回数</a></p>
+          <p><a href="/trade/rank.html?n=50&amp;c=sd" class="">約定代金</a></p>
+        </th>
+        <th class="th03 th02">
+          <p><a href="/trade/rank.html?n=50&amp;c=fn" class="">FXネオ回数</a></p>
+          <p><a href="/trade/rank.html?n=50&amp;c=fd" class="">約定代金</a></p>
+        </th>
+        <th class="th03 th02">
+          <p><a href="/trade/rank.html?n=50&amp;c=xn" class="">外為OP回数</a></p>
+          <p><a href="/trade/rank.html?n=50&amp;c=xd" class="">約定代金</a></p>
+        </th>
+        <th class="th04 th02">
+          <p><a href="/trade/rank.html?n=50&amp;c=tn" class="">くりっく365回数</a></p>
+          <p><a href="/trade/rank.html?n=50&amp;c=td" class="">約定代金</a></p>
+        </th>
+        <th class="th05 th02">
+          <p><a href="/trade/rank.html?n=50&amp;c=cn" class="">CFD回数</a></p>
+          <p><a href="/trade/rank.html?n=50&amp;c=cd" class="">約定代金</a></p>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="row_even">
+        <td rowspan="3" class="rank_no">1位</td>
+        <td rowspan="3" class="rank_icon"><span class="img icon_arrow icon_up" title="アップ">アップ</span></td>
+        <td rowspan="2" class="nickname"><a href="rank_user.html?uid=01234567890123456789012345678901">テストユーザ1</a></td>
+        <td class="up">+123.4 ％</td>
+        <td>123,456円</td>
+        <td>10 回</td>
+        <td>20 回</td>
+        <td>30 回</td>
+        <td>40 回</td>
+        <td>50 回</td>
+        <td>60 回</td>
+      </tr>
+      <tr class="row_even">
+        <td class="up">+789,012 円</td>
+        <td>98,765円</td>
+        <td>15 千円</td>
+        <td>25 千円</td>
+        <td>35 千円</td>
+        <td>45 千円</td>
+        <td>55 千円</td>
+        <td>65 千円</td>
+      </tr>
+      <tr class="row_even">
+        <td class="user_link">－</td>
+        <td colspan="2" class="user_attr">男性／90代／東京都</td>
+        <td colspan="6" class="user_message">&nbsp;</td>
+      </tr>
+      </tbody>
+  </table>
+  <!-- /rank table -->
+
+  <!-- page navi -->
+  <div class="rank_navi mgt10">
+    <div class="rank_paging"><ul class="page_navi clearfix"><li><span><span>1</span></span></li><li><a href="/trade/rank.html?pageID=2" title="page 2">2</a></li><li><a href="/trade/rank.html?pageID=3" title="page 3">3</a></li><li><a href="/trade/rank.html?pageID=4" title="page 4">4</a></li><li><a href="/trade/rank.html?pageID=5" title="page 5">5</a></li><li><a href="/trade/rank.html?pageID=2" title="next page"> &gt;&gt; </a></li><li><a href="/trade/rank.html?pageID=364" title="last page">364</a></li></ul></div>
+  </div>
+  <!-- /page navi -->
+
+  <!-- ページの先頭へ -->
+  <div class="clearfix mgt16">
+    <div class="left"><a href="rank_old.html">※2013年11月以前の成績はこちら</a></div>
+    <div class="right"><p class="pagetop2"><a href="#pagetop">ページの先頭へ</a></p></div>
+  </div>
+
+    </div>
+    <!-- /main contents area -->
+  </div>
+  <div id="FOOTER_AREA">
+    <?php require_once "include/trade_footer.php"; ?>
+  </div>
+</div>
+<?php include_once "include/general.php"; ?>
+</body>
+</html>
