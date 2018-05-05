@@ -1,6 +1,6 @@
 language: python
 python: 3.5
 script:
-  - python -m tests.test_util
-  - python -m tests.test_users
-  - python -m tests.test_rank_page
+  - python -m unittest tests.test_util
+  - python -m unittest tests.test_users
+  - python -m unittest tests.test_rank_page
